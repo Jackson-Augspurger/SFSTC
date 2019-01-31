@@ -8,10 +8,13 @@ public class Movement : MonoBehaviour {
     public float MovSpeed = 0f;
     public float returnSpeed = 0f;
 
+    Collider2D col;
     private bool goingDown = true;
 
 	void Start () {
-		
+
+        col = GetComponent<Collider2D>();
+
 	}
 	
 	void Update () {
@@ -44,6 +47,9 @@ public class Movement : MonoBehaviour {
         if (Input.GetKeyDown("r"))
         {
             goingDown = false;
+            //Disable Collision
+            col.enabled=!col.enabled;
+
         }
 
     }
