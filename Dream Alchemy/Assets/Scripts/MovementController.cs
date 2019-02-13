@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MovementController : MonoBehaviour {
 
     public float speed;
+    public GameObject RecipesBook;
 
     private Rigidbody rb;
     private Collider col;
+    private Boolean RecipeBookUI = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -22,8 +26,12 @@ public class MovementController : MonoBehaviour {
         if (collision.gameObject.tag == "Interactable")
         {
             col = collision.collider;
-            Debug.LogError("Interacting w/ " + col.name);    
+            //Debug.LogError("Interacting w/ " + col.name);    
         }
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        col = null;
     }
 
     // Update is called once per frame
@@ -39,6 +47,34 @@ public class MovementController : MonoBehaviour {
         {
             transform.Translate(movement * speed * Time.deltaTime, Space.World);
         }
+
+        if (Input.GetKeyDown("e"))
+        {
+            if (col != null)
+            {
+                Debug.LogError("Interacting w/ " + col.name); 
+            }
+            else
+            {
+                Debug.LogError("Nope");
+            }
+        }
+
+        if (Input.GetKeyDown("r"))
+        {
+            if (RecipeBookUI == false)
+            {
+                RecipesBook.SetActive(true);
+                RecipeBookUI = true;
+            }
+            else if (RecipeBookUI == true)
+            {
+                RecipesBook.SetActive(false);
+                RecipeBookUI = false;
+            }
+        }
+
     }
+
 
 }
