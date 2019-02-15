@@ -7,10 +7,15 @@ public class MovementController : MonoBehaviour {
 
     public float speed;
     public GameObject RecipesBook;
+    public GameObject ClosetUI;
+    public GameObject CauldronUI;
+    public GameObject PrepTableUI;
+
 
     private Rigidbody rb;
     private Collider col;
     private Boolean RecipeBookUI = false;
+    private Boolean InMenu = false;
 
 
 	// Use this for initialization
@@ -20,28 +25,34 @@ public class MovementController : MonoBehaviour {
 
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-
-        if (collision.gameObject.tag == "Interactable")
+        if (other.gameObject.tag == "Interactable")
         {
-            col = collision.collider;
+            col = other;
             //Debug.LogError("Interacting w/ " + col.name);    
         }
     }
-    private void OnCollisionExit(Collision collision)
+
+    private void OnTriggerExit(Collider other)
     {
         col = null;
+
     }
 
     // Update is called once per frame
     void Update () {
 
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        // transform.rotation = Quaternion.LookRotation(movement);
+
+        if (InMenu == true)
+            movement = Vector3.zero;
+        
 
         if (movement != Vector3.zero)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), 0.2f);
+
+
 
         if (transform.position.x > -4.45 && transform.position.x < 4.45 && transform.position.z >-4.45 && transform.position.z<4.45)
         {
@@ -50,10 +61,45 @@ public class MovementController : MonoBehaviour {
 
         if (Input.GetKeyDown("e"))
         {
-            if (col != null)
+            if (col != null && InMenu == false)
             {
-                Debug.LogError("Interacting w/ " + col.name); 
+
+                if (col.name == "Closet")
+                {
+                    ClosetUI.SetActive(true);
+                }
+                if (col.name == "Cauldron")
+                {
+                    CauldronUI.SetActive(true);
+                }
+                if (col.name == "PrepTable")
+                {
+                    PrepTableUI.SetActive(true);
+                }
+
+                InMenu = true;
             }
+
+            else if (col != null && InMenu == true)
+            {
+
+                if (col.name == "Closet")
+                {
+                    ClosetUI.SetActive(false);
+
+                }
+                if (col.name == "Cauldron")
+                {
+                    CauldronUI.SetActive(false);
+                }
+                if (col.name == "PrepTable")
+                {
+                    PrepTableUI.SetActive(false);
+                }
+
+                InMenu = false;
+            }
+
             else
             {
                 Debug.LogError("Nope");
