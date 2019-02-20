@@ -10,6 +10,7 @@ public class MovementController : MonoBehaviour {
     public GameObject ClosetUI;
     public GameObject CauldronUI;
     public GameObject PrepTableUI;
+    public GameObject CombinerUI;
 
 
     private Rigidbody rb;
@@ -76,6 +77,10 @@ public class MovementController : MonoBehaviour {
                 {
                     PrepTableUI.SetActive(true);
                 }
+                if (col.name == "Combiner")
+                {
+                    CombinerUI.SetActive(true);
+                }
 
                 InMenu = true;
             }
@@ -95,6 +100,10 @@ public class MovementController : MonoBehaviour {
                 if (col.name == "PrepTable")
                 {
                     PrepTableUI.SetActive(false);
+                }
+                if (col.name == "Combiner")
+                {
+                    CombinerUI.SetActive(false);
                 }
 
                 InMenu = false;
