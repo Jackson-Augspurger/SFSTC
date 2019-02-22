@@ -9,8 +9,10 @@ public class MovementController : MonoBehaviour {
     public GameObject RecipesBook;
     public GameObject ClosetUI;
     public GameObject CauldronUI;
-    public GameObject PrepTableUI;
+    public GameObject BurnerUI;
     public GameObject CombinerUI;
+    public GameObject DiluterUI;
+
 
 
     private Rigidbody rb;
@@ -73,13 +75,17 @@ public class MovementController : MonoBehaviour {
                 {
                     CauldronUI.SetActive(true);
                 }
-                if (col.name == "PrepTable")
+                if (col.name == "Burner")
                 {
-                    PrepTableUI.SetActive(true);
+                    BurnerUI.SetActive(true);
                 }
                 if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(true);
+                }
+                if (col.name == "Diluter")
+                {
+                    DiluterUI.SetActive(true);
                 }
 
                 InMenu = true;
@@ -97,13 +103,17 @@ public class MovementController : MonoBehaviour {
                 {
                     CauldronUI.SetActive(false);
                 }
-                if (col.name == "PrepTable")
+                if (col.name == "Burner")
                 {
-                    PrepTableUI.SetActive(false);
+                    BurnerUI.SetActive(false);
                 }
                 if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(false);
+                }
+                if (col.name == "Diluter")
+                {
+                    DiluterUI.SetActive(false);
                 }
 
                 InMenu = false;
