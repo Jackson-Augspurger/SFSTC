@@ -68,11 +68,11 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/Jason/Documents/GitHub/SFSTC/SFSTC/Dream Alchemy/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Jason/Documents/GitHub/SFSTC/SFSTC/Dream Alchemy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Jason/Documents/GitHub/SFSTC/SFSTC/Dream Alchemy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/Jason/Documents/GitHub/SFSTC/SFSTC/Dream Alchemy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/Jason/Documents/GitHub/SFSTC/SFSTC/Dream Alchemy/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
