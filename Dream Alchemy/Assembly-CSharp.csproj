@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\InventorySystem.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Jason/Documents/GitHub/SFSTC/SFSTC/Dream Alchemy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
