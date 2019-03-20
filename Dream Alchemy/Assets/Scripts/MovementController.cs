@@ -12,7 +12,7 @@ public class MovementController : MonoBehaviour {
     public GameObject BurnerUI;
     public GameObject CombinerUI;
     public GameObject DiluterUI;
-
+    public GameObject InventoryUI;
 
 
     private Rigidbody rb;
@@ -70,22 +70,27 @@ public class MovementController : MonoBehaviour {
                 if (col.name == "Closet")
                 {
                     ClosetUI.SetActive(true);
+                    InventoryUI.SetActive(true);
                 }
                 if (col.name == "Cauldron")
                 {
                     CauldronUI.SetActive(true);
+                    InventoryUI.SetActive(true);
                 }
                 if (col.name == "Burner")
                 {
                     BurnerUI.SetActive(true);
+                    InventoryUI.SetActive(true);
                 }
                 if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(true);
+                    InventoryUI.SetActive(true);
                 }
                 if (col.name == "Diluter")
                 {
                     DiluterUI.SetActive(true);
+                    InventoryUI.SetActive(true);
                 }
 
                 InMenu = true;
@@ -97,23 +102,27 @@ public class MovementController : MonoBehaviour {
                 if (col.name == "Closet")
                 {
                     ClosetUI.SetActive(false);
-
+                    InventoryUI.SetActive(false);
                 }
                 if (col.name == "Cauldron")
                 {
                     CauldronUI.SetActive(false);
+                    InventoryUI.SetActive(false);
                 }
                 if (col.name == "Burner")
                 {
                     BurnerUI.SetActive(false);
+                    InventoryUI.SetActive(false);
                 }
                 if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(false);
+                    InventoryUI.SetActive(false);
                 }
                 if (col.name == "Diluter")
                 {
                     DiluterUI.SetActive(false);
+                    InventoryUI.SetActive(false);
                 }
 
                 InMenu = false;
