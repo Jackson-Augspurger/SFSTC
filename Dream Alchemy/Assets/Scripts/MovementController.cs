@@ -16,6 +16,9 @@ public class MovementController : MonoBehaviour {
     public GameObject InventoryPanel;
     public GameObject ClosetPanel;
     public GameObject CauldronPanel;
+    public GameObject CombinerPanel;
+    public GameObject BurnerPanel;
+    public GameObject DiluterPanel;
 
 
     private Rigidbody rb;
@@ -85,16 +88,19 @@ public class MovementController : MonoBehaviour {
                 if (col.name == "Burner")
                 {
                     BurnerUI.SetActive(true);
+                    BurnerPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
                 if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(true);
+                    CombinerPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
                 if (col.name == "Diluter")
                 {
                     DiluterUI.SetActive(true);
+                    DiluterPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
 
@@ -113,22 +119,25 @@ public class MovementController : MonoBehaviour {
                 if (col.name == "Cauldron")
                 {
                     CauldronUI.SetActive(false);
-                    CauldronPanel.SetActive(true);
+                    CauldronPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
                 if (col.name == "Burner")
                 {
                     BurnerUI.SetActive(false);
+                    BurnerPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
                 if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(false);
+                    CombinerPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
                 if (col.name == "Diluter")
                 {
                     DiluterUI.SetActive(false);
+                    DiluterPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
 
