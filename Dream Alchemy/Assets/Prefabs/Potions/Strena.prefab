@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2940667892732083184}
   - component: {fileID: 1803577339174213239}
   - component: {fileID: 991311163553158998}
+  - component: {fileID: 1014509432618407029}
   m_Layer: 5
   m_Name: Strena
   m_TagString: Untagged
@@ -101,3 +102,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
+  POS: {fileID: 0}
+  NEG: {fileID: 0}
+  pos: Passion
+  neg: Obsession
+--- !u!114 &1014509432618407029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8341503832892722659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849357e8fe581e9488e269c16ee39ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
