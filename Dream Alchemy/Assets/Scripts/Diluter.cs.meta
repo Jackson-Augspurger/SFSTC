@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: c659433ed6002b64a9de64f028dc78d9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Antia: {fileID: 3275891421545139043, guid: ede5f9c65d4b9104e9038e97b7f2894a, type: 3}
+  - Baneberry: {instanceID: 0}
+  - Bundium: {instanceID: 0}
+  - Emeragon: {instanceID: 0}
+  - Erumpet: {instanceID: 0}
+  - Everklena: {instanceID: 0}
+  - Laught: {instanceID: 0}
+  - Mandium: {instanceID: 0}
+  - Moonseed: {instanceID: 0}
+  - Noxin: {instanceID: 0}
+  - Ponpion: {instanceID: 0}
+  - Quodot: {instanceID: 0}
+  - Redote: {instanceID: 0}
+  - Serecessa: {instanceID: 0}
+  - Strena: {instanceID: 0}
+  - Tentacula: {instanceID: 0}
+  - Tolipan: {instanceID: 0}
+  - Tranquesia: {instanceID: 0}
+  - Wiggen: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

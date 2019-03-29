@@ -20,7 +20,7 @@ public class Combiner : MonoBehaviour
     public GameObject Erumpet;
     public GameObject Everklena;
     public GameObject Laught;
-    public GameObject Mandum;
+    public GameObject Mandium;
     public GameObject Moonseed;
     public GameObject Noxin;
     public GameObject Ponpion;
@@ -49,6 +49,7 @@ public class Combiner : MonoBehaviour
     {
         if (Input.GetKeyDown("g"))
         {
+            CheckedOnce = true;
             CheckCombo(left, right);
         }
 
@@ -58,13 +59,77 @@ public class Combiner : MonoBehaviour
     {
         GameObject newPot = null;
 
-        if (left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Serecessa")
+        //Make Yellow
+        if (left.transform.GetChild(0).name == "Noxion" && right.transform.GetChild(0).name == "Strena")
         {
             Destroy(left); Destroy(right);
+            newPot = Instantiate(Laught, output.transform);
+            newPot.name = Laught.name;
+        }
+        //Make Orange
+        if (left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Strena")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Bundium, output.transform);
+            newPot.name = Bundium.name;
+        }
+        //Make Cyan
+        if (left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Mandium")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Tranquesia, output.transform);
+            newPot.name = Tranquesia.name;
+        }
+        //Make Purple
+        if (left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Serecessa")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Wiggen, output.transform);
             newPot.name = Wiggen.name;
         }
-
+        //Make Magenta
+        if (left.transform.GetChild(0).name == "Pompion" && right.transform.GetChild(0).name == "Wiggen")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Emeragon, output.transform);
+            newPot.name = Emeragon.name;
+        }
+        //Make Red-Orange
+        if (left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Bundium")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Erumpet, output.transform);
+            newPot.name = Erumpet.name;
+        }
+        //Make Mulberry
+        if (left.transform.GetChild(0).name == "Moonseed" && right.transform.GetChild(0).name == "Strena")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Everklena, output.transform);
+            newPot.name = Everklena.name;
+        }
+        //Make Yellow-Green
+        if (left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Noxin")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Quodot, output.transform);
+            newPot.name = Quodot.name;
+        }
+        //Make Turquoise
+        if (left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Tentacula")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Redote, output.transform);
+            newPot.name = Redote.name;
+        }
+        //Make Blue-Green
+        if (left.transform.GetChild(0).name == "Serecessa" && right.transform.GetChild(0).name == "Noxion")
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Mandium, output.transform);
+            newPot.name = Mandium.name;
+        }
+        
         //Checks the Inverse
         if (CheckedOnce == true)
         {
