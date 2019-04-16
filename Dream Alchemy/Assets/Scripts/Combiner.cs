@@ -62,7 +62,7 @@ public class Combiner : MonoBehaviour
         //Make Yellow
         if (left.transform.GetChild(0).name == "Noxion" && right.transform.GetChild(0).name == "Strena")
         {
-            Destroy(left); Destroy(right);
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Laught, output.transform);
             newPot.name = Laught.name;
         }

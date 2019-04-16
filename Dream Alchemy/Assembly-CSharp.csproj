@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Burner.cs" />
+    <Compile Include="Assets\Scripts\Cauldron.cs" />
     <Compile Include="Assets\Scripts\Combiner.cs" />
     <Compile Include="Assets\Scripts\Diluter.cs" />
     <Compile Include="Assets\Scripts\DragHandler.cs" />
