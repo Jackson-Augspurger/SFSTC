@@ -65,47 +65,50 @@ public class Cauldron : MonoBehaviour
 
     void CheckMission(GameObject left, GameObject center, GameObject right)
     {
-
-        if (left.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
-        && center.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
-        && right.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+        if (MissionSlot1.transform.GetChildCount() > 0)
         {
+            if (left.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
+            && center.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
+            && right.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+            {
 
-            Destroy(left.transform.GetChild(0).gameObject);
-            Destroy(right.transform.GetChild(0).gameObject);
-            Destroy(center.transform.GetChild(0).gameObject);
+                Destroy(left.transform.GetChild(0).gameObject);
+                Destroy(right.transform.GetChild(0).gameObject);
+                Destroy(center.transform.GetChild(0).gameObject);
 
-            Destroy(MissionSlot1.transform.GetChild(0).gameObject);
+                Destroy(MissionSlot1.transform.GetChild(0).gameObject);
+            }
         }
-
-        else if (left.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
-        && center.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
-        && right.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+        if (MissionSlot2.transform.GetChildCount() > 0)
         {
+            if (left.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
+            && center.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
+            && right.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+            {
 
-            Destroy(left.transform.GetChild(0).gameObject);
-            Destroy(right.transform.GetChild(0).gameObject);
-            Destroy(center.transform.GetChild(0).gameObject);
+                Destroy(left.transform.GetChild(0).gameObject);
+                Destroy(right.transform.GetChild(0).gameObject);
+                Destroy(center.transform.GetChild(0).gameObject);
 
-            Destroy(MissionSlot2.transform.GetChild(0).gameObject);
+                Destroy(MissionSlot2.transform.GetChild(0).gameObject);
+            }
         }
+        if (MissionSlot3.transform.GetChildCount() > 0)
+            if (left.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
+            && center.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
+            && right.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+            {
 
-        else if (left.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
-        && center.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
-        && right.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
-        {
+                Destroy(left.transform.GetChild(0).gameObject);
+                Destroy(right.transform.GetChild(0).gameObject);
+                Destroy(center.transform.GetChild(0).gameObject);
 
-            Destroy(left.transform.GetChild(0).gameObject);
-            Destroy(right.transform.GetChild(0).gameObject);
-            Destroy(center.transform.GetChild(0).gameObject);
+                Destroy(MissionSlot3.transform.GetChild(0).gameObject);
 
-            Destroy(MissionSlot3.transform.GetChild(0).gameObject);
+            }
 
-        }
-        else { 
-            Debug.Log("Not Combonation");
-        }
     }
+
     void CheckProgression()
     {
 #pragma warning disable CS0618 // Type or member is obsolete

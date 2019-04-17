@@ -1,4 +1,7 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
+- path: Assets/Scenes/Potion Room.unity
   isLoaded: 1
   isActive: 1
+- path: Assets/Scenes/Main Menu.unity
+  isLoaded: 1
+  isActive: 0

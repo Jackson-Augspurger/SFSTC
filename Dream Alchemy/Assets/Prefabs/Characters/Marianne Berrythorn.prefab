@@ -622,7 +622,7 @@ PrefabInstance:
     - target: {fileID: 1008894132947842123, guid: 58011166d8a392f45b11379eaf12427c,
         type: 3}
       propertyPath: m_Name
-      value: Noxin
+      value: Noxion
       objectReference: {fileID: 0}
     - target: {fileID: 2867374710829773826, guid: 58011166d8a392f45b11379eaf12427c,
         type: 3}

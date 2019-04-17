@@ -67,10 +67,12 @@
     <Compile Include="Assets\Scripts\DragHandler.cs" />
     <Compile Include="Assets\Scripts\FormulaDisplayController.cs" />
     <Compile Include="Assets\Scripts\FormulaUnlock.cs" />
+    <Compile Include="Assets\Scripts\MainMenuButtonController.cs" />
     <Compile Include="Assets\Scripts\MissionController.cs" />
     <Compile Include="Assets\Scripts\MissionDisplayController.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\NameDisplayController.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuButtonController.cs" />
     <Compile Include="Assets\Scripts\PermanentPotions.cs" />
     <Compile Include="Assets\Scripts\slot.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

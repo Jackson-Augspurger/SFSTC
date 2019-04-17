@@ -13,6 +13,8 @@ public class MovementController : MonoBehaviour {
     public GameObject CombinerUI;
     public GameObject DiluterUI;
 
+    public GameObject PauseMenu;
+
     public GameObject InventoryPanel;
     public GameObject ClosetPanel;
     public GameObject CauldronPanel;
@@ -26,10 +28,11 @@ public class MovementController : MonoBehaviour {
     private Collider col;
     private Boolean RecipeBookUI = false;
     private Boolean InMenu = false;
+    private Boolean InPauseMenu = false;
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
         rb = GetComponent<Rigidbody>();
 
@@ -108,7 +111,7 @@ public class MovementController : MonoBehaviour {
                 InMenu = true;
             }
 
-            else if (col != null && InMenu == true)
+            else if (InMenu == true)
             {
 
                 if (col.name == "Closet")
@@ -160,6 +163,7 @@ public class MovementController : MonoBehaviour {
                 {
                     RecipesBook.SetActive(true);
                     RecipeBookUI = true;
+                    InMenu = true;
                     FormulaBookPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
@@ -167,11 +171,31 @@ public class MovementController : MonoBehaviour {
                 {
                     RecipesBook.SetActive(false);
                     RecipeBookUI = false;
+                    InMenu = false;
                     FormulaBookPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
             }
         }
+
+        if (Input.GetKeyDown("escape"))
+        {
+
+            if (InPauseMenu == false)
+            {
+                PauseMenu.SetActive(true);
+                InMenu = true;
+                InPauseMenu = true;
+            }
+            else if (InPauseMenu == true)
+            {
+                PauseMenu.SetActive(false);
+                InMenu = false;
+                InPauseMenu = false;
+            }
+
+        }
+
 
     }
 
