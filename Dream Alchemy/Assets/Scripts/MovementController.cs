@@ -19,6 +19,7 @@ public class MovementController : MonoBehaviour {
     public GameObject CombinerPanel;
     public GameObject BurnerPanel;
     public GameObject DiluterPanel;
+    public GameObject FormulaBookPanel;
 
 
     private Rigidbody rb;
@@ -79,25 +80,25 @@ public class MovementController : MonoBehaviour {
                     ClosetPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
-                if (col.name == "Cauldron")
+                else if (col.name == "Cauldron")
                 {
                     CauldronUI.SetActive(true);
                     CauldronPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
-                if (col.name == "Burner")
+                else if (col.name == "Burner")
                 {
                     BurnerUI.SetActive(true);
                     BurnerPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
-                if (col.name == "Combiner")
+                else if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(true);
                     CombinerPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
-                if (col.name == "Diluter")
+                else if (col.name == "Diluter")
                 {
                     DiluterUI.SetActive(true);
                     DiluterPanel.SetActive(true);
@@ -116,30 +117,31 @@ public class MovementController : MonoBehaviour {
                     ClosetPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
-                if (col.name == "Cauldron")
+                else if (col.name == "Cauldron")
                 {
                     CauldronUI.SetActive(false);
                     CauldronPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
-                if (col.name == "Burner")
+                else if (col.name == "Burner")
                 {
                     BurnerUI.SetActive(false);
                     BurnerPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
-                if (col.name == "Combiner")
+                else if (col.name == "Combiner")
                 {
                     CombinerUI.SetActive(false);
                     CombinerPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
-                if (col.name == "Diluter")
+                else if (col.name == "Diluter")
                 {
                     DiluterUI.SetActive(false);
                     DiluterPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
+
 
                 InMenu = false;
             }
@@ -152,15 +154,22 @@ public class MovementController : MonoBehaviour {
 
         if (Input.GetKeyDown("r"))
         {
-            if (RecipeBookUI == false)
+            if (InMenu == false)
             {
-                RecipesBook.SetActive(true);
-                RecipeBookUI = true;
-            }
-            else if (RecipeBookUI == true)
-            {
-                RecipesBook.SetActive(false);
-                RecipeBookUI = false;
+                if (RecipeBookUI == false)
+                {
+                    RecipesBook.SetActive(true);
+                    RecipeBookUI = true;
+                    FormulaBookPanel.SetActive(true);
+                    InventoryPanel.SetActive(true);
+                }
+                else if (RecipeBookUI == true)
+                {
+                    RecipesBook.SetActive(false);
+                    RecipeBookUI = false;
+                    FormulaBookPanel.SetActive(false);
+                    InventoryPanel.SetActive(false);
+                }
             }
         }
 

@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\Combiner.cs" />
     <Compile Include="Assets\Scripts\Diluter.cs" />
     <Compile Include="Assets\Scripts\DragHandler.cs" />
+    <Compile Include="Assets\Scripts\FormulaDisplayController.cs" />
+    <Compile Include="Assets\Scripts\FormulaUnlock.cs" />
     <Compile Include="Assets\Scripts\MissionController.cs" />
     <Compile Include="Assets\Scripts\MissionDisplayController.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />

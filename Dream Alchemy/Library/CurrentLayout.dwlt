@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 711, y: 498}
-  m_MaxSize: {x: 18006, y: 14048}
+  m_MinSize: {x: 709, y: 498}
+  m_MaxSize: {x: 18004, y: 14048}
   vertical: 0
-  controlID: 112
+  controlID: 110
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,8 +135,8 @@ MonoBehaviour:
     y: 0
     width: 409
     height: 947
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 80
+  controlID: 111
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,20 +287,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Potions
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets/Prefabs/Potions
+  - Assets/Scripts
   m_LastFoldersGridSize: 68
   m_LastProjectPath: E:\Unity Projects\SFSTC\Dream Alchemy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 78300000
-    m_LastClickedID: 12408
-    m_ExpandedIDs: 000000001430000074310000b431000000ca9a3b
+    m_SelectedIDs: 1c0b0000
+    m_LastClickedID: 2844
+    m_ExpandedIDs: 000000009c090000820b0000dc0b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -328,7 +328,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: ba2d0000
     m_LastClickedID: 11706
-    m_ExpandedIDs: 000000001430000074310000b4310000
+    m_ExpandedIDs: 000000009c090000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -414,7 +414,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ac90ffffb090ffffb490ffff50ebffff1cf4ffff50320000683200007632000098320000dc3200000433000060330000d63400001e35000066350000c0350000e83500000c360000223600005c36000084360000b2360000
+      m_ExpandedIDs: 04faffffd4fbffffd00e0000a4100000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -469,9 +469,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.64139867, y: 4.733985, z: -8.339948}
+    m_Target: {x: -0.6630986, y: 4.7345867, z: -8.34148}
     speed: 2
-    m_Value: {x: -0.64139867, y: 4.733985, z: -8.339948}
+    m_Value: {x: -0.6630986, y: 4.7345867, z: -8.34148}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -499,13 +499,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.19108985, y: 0.019137586, z: -0.0037428571, w: -0.9813789}
+    m_Target: {x: -0.24236482, y: -0.0072777965, z: 0.0018013658, w: -0.97015625}
     speed: 2
-    m_Value: {x: -0.19108985, y: 0.019137586, z: -0.0037428571, w: -0.9813789}
+    m_Value: {x: -0.24236482, y: -0.0072777965, z: 0.0018013658, w: -0.97015625}
   m_Size:
-    m_Target: 0.20949614
+    m_Target: 0.187821
     speed: 2
-    m_Value: 0.20949614
+    m_Value: 0.187821
   m_Ortho:
     m_Target: 0
     speed: 2

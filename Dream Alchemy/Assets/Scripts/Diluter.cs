@@ -31,11 +31,16 @@ public class Diluter : MonoBehaviour
 
     #endregion
 
+    FormulaUnlock FU;
+
 
     // Start is called before the first frame update
     void Start()
     {
         slot = GameObject.Find("DiluterSlot");
+
+        FU = GameObject.FindObjectOfType(typeof(FormulaUnlock)) as FormulaUnlock;
+
     }
 
     // Update is called once per frame
@@ -45,6 +50,7 @@ public class Diluter : MonoBehaviour
         {
             CheckDilutable(slot);
         }
+
 
     }
 
@@ -58,6 +64,8 @@ public class Diluter : MonoBehaviour
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Ponpion, slot.transform);
             newPot.name = Ponpion.name;
+            FU.Unlock(Ponpion);
+
         }
         //Make Light Blue
         if (slot.transform.GetChild(0).name == "Serecessa")
@@ -65,6 +73,8 @@ public class Diluter : MonoBehaviour
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Baneberry, slot.transform);
             newPot.name = Baneberry.name;
+            FU.Unlock(Baneberry);
+
         }
         //Make Light Purple
         if (slot.transform.GetChild(0).name == "Wiggen")
@@ -72,6 +82,8 @@ public class Diluter : MonoBehaviour
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Moonseed, slot.transform);
             newPot.name = Moonseed.name;
+            FU.Unlock(Moonseed);
+
         }
         //Make Light Green
         if (slot.transform.GetChild(0).name == "Noxion")
@@ -79,6 +91,8 @@ public class Diluter : MonoBehaviour
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Tentacula, slot.transform);
             newPot.name = Tentacula.name;
+            FU.Unlock(Tentacula);
+
         }
 
     }

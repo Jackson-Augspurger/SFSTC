@@ -35,6 +35,7 @@ public class Combiner : MonoBehaviour
 
     #endregion
 
+    FormulaUnlock FU;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,9 @@ public class Combiner : MonoBehaviour
         output = GameObject.Find("Output");
         left = GameObject.Find("Slot1");
         right = GameObject.Find("Slot2");
+
+        FU = GameObject.FindObjectOfType(typeof(FormulaUnlock)) as FormulaUnlock;
+
     }
 
     // Update is called once per frame
@@ -65,6 +69,7 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Laught, output.transform);
             newPot.name = Laught.name;
+            FU.Unlock(Laught);
         }
         //Make Orange
         if (left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Strena")
@@ -72,6 +77,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Bundium, output.transform);
             newPot.name = Bundium.name;
+            FU.Unlock(Bundium);
+
         }
         //Make Cyan
         if (left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Mandium")
@@ -79,6 +86,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Tranquesia, output.transform);
             newPot.name = Tranquesia.name;
+            FU.Unlock(Tranquesia);
+
         }
         //Make Purple
         if (left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Serecessa")
@@ -86,6 +95,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Wiggen, output.transform);
             newPot.name = Wiggen.name;
+            FU.Unlock(Wiggen);
+
         }
         //Make Magenta
         if (left.transform.GetChild(0).name == "Pompion" && right.transform.GetChild(0).name == "Wiggen")
@@ -93,6 +104,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Emeragon, output.transform);
             newPot.name = Emeragon.name;
+            FU.Unlock(Emeragon);
+
         }
         //Make Red-Orange
         if (left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Bundium")
@@ -100,6 +113,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Erumpet, output.transform);
             newPot.name = Erumpet.name;
+            FU.Unlock(Erumpet);
+
         }
         //Make Mulberry
         if (left.transform.GetChild(0).name == "Moonseed" && right.transform.GetChild(0).name == "Strena")
@@ -107,6 +122,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Everklena, output.transform);
             newPot.name = Everklena.name;
+            FU.Unlock(Everklena);
+
         }
         //Make Yellow-Green
         if (left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Noxin")
@@ -114,6 +131,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Quodot, output.transform);
             newPot.name = Quodot.name;
+            FU.Unlock(Quodot);
+
         }
         //Make Turquoise
         if (left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Tentacula")
@@ -121,6 +140,8 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Redote, output.transform);
             newPot.name = Redote.name;
+            FU.Unlock(Redote);
+
         }
         //Make Blue-Green
         if (left.transform.GetChild(0).name == "Serecessa" && right.transform.GetChild(0).name == "Noxion")
@@ -128,8 +149,10 @@ public class Combiner : MonoBehaviour
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Mandium, output.transform);
             newPot.name = Mandium.name;
+            FU.Unlock(Mandium);
+
         }
-        
+
         //Checks the Inverse
         if (CheckedOnce == true)
         {

@@ -31,11 +31,16 @@ public class Burner : MonoBehaviour
 
     #endregion
 
+    FormulaUnlock FU;
+
 
     // Start is called before the first frame update
     void Start()
     {
         slot = GameObject.Find("BurnerSlot");
+
+        FU = GameObject.FindObjectOfType(typeof(FormulaUnlock)) as FormulaUnlock;
+
     }
 
     // Update is called once per frame
@@ -56,8 +61,10 @@ public class Burner : MonoBehaviour
         if (slot.transform.GetChild(0).name == "Bundium")
         {
             Destroy(slot.transform.GetChild(0).gameObject);
-            newPot = Instantiate(Bundium, slot.transform);
-            newPot.name = Bundium.name;
+            newPot = Instantiate(Tolipan, slot.transform);
+            newPot.name = Tolipan.name;
+            FU.Unlock(Tolipan);
+
         }
         //Make Navy
         if (slot.transform.GetChild(0).name == "Serecessa")
@@ -65,6 +72,8 @@ public class Burner : MonoBehaviour
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Antia, slot.transform);
             newPot.name = Antia.name;
+            FU.Unlock(Antia);
+
         }
 
     }
