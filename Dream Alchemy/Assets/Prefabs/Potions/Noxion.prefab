@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2005173404095991091}
   - component: {fileID: 2661861264768177001}
   m_Layer: 5
-  m_Name: Noxin
+  m_Name: Noxion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

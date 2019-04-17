@@ -37,11 +37,19 @@ public class Cauldron : MonoBehaviour
 
     #endregion
 
+    public GameObject MissionUI;
+
+    bool TutorialDone = false;
+    bool LevelOneDone = false;
+    MissionController mc;
+
     void Start()
     {
         left = GameObject.Find("Left");
         center = GameObject.Find("Center");
         right = GameObject.Find("Right");
+
+        mc = GameObject.FindObjectOfType(typeof(MissionController)) as MissionController;
     }
 
     void Update()
@@ -50,6 +58,9 @@ public class Cauldron : MonoBehaviour
         {
             CheckMission(left,center,right);
         }
+
+        CheckProgression();
+
     }
 
     void CheckMission(GameObject left, GameObject center, GameObject right)
@@ -57,7 +68,8 @@ public class Cauldron : MonoBehaviour
 
         if (left.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
         && center.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
-        && right.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name) {
+        && right.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+        {
 
             Destroy(left.transform.GetChild(0).gameObject);
             Destroy(right.transform.GetChild(0).gameObject);
@@ -66,6 +78,60 @@ public class Cauldron : MonoBehaviour
             Destroy(MissionSlot1.transform.GetChild(0).gameObject);
         }
 
-    }
+        else if (left.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
+        && center.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
+        && right.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+        {
 
+            Destroy(left.transform.GetChild(0).gameObject);
+            Destroy(right.transform.GetChild(0).gameObject);
+            Destroy(center.transform.GetChild(0).gameObject);
+
+            Destroy(MissionSlot2.transform.GetChild(0).gameObject);
+        }
+
+        else if (left.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).name
+        && center.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
+        && right.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
+        {
+
+            Destroy(left.transform.GetChild(0).gameObject);
+            Destroy(right.transform.GetChild(0).gameObject);
+            Destroy(center.transform.GetChild(0).gameObject);
+
+            Destroy(MissionSlot3.transform.GetChild(0).gameObject);
+
+        }
+        else { 
+            Debug.Log("Not Combonation");
+        }
+    }
+    void CheckProgression()
+    {
+#pragma warning disable CS0618 // Type or member is obsolete
+
+        if (MissionSlot1.transform.GetChildCount() == 0 && TutorialDone == false)
+        {
+            Debug.Log("Tutorial done");
+            mc.PlayLevel1();
+            TutorialDone = true;
+        }
+
+        else if (MissionSlot1.transform.GetChildCount() == 0 && MissionSlot2.transform.GetChildCount() == 0 && MissionSlot3.transform.GetChildCount() == 0 && TutorialDone == true && LevelOneDone == false)
+        {
+            Debug.Log("Level 1 Done");
+            mc.PlayLevel2();
+            LevelOneDone = true;
+
+        }
+
+        else if (MissionSlot1.transform.GetChildCount() == 0 && MissionSlot2.transform.GetChildCount() == 0 && MissionSlot3.transform.GetChildCount() == 0 && TutorialDone == true && LevelOneDone == true)
+        {
+            //Debug.Log("Level 2 Done");
+            //Play Level 3
+
+        }
+#pragma warning restore CS0618 // Type or member is obsolete
+
+    }
 }

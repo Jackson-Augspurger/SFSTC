@@ -18,7 +18,7 @@ public class Diluter : MonoBehaviour
     public GameObject Laught;
     public GameObject Mandium;
     public GameObject Moonseed;
-    public GameObject Noxin;
+    public GameObject Noxion;
     public GameObject Ponpion;
     public GameObject Quodot;
     public GameObject Redote;
@@ -74,7 +74,7 @@ public class Diluter : MonoBehaviour
             newPot.name = Moonseed.name;
         }
         //Make Light Green
-        if (slot.transform.GetChild(0).name == "Noxin")
+        if (slot.transform.GetChild(0).name == "Noxion")
         {
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Tentacula, slot.transform);
