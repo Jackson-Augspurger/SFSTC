@@ -23,6 +23,7 @@ public class MovementController : MonoBehaviour {
     public GameObject DiluterPanel;
     public GameObject FormulaBookPanel;
 
+    private Boolean Movlock = true;
 
     private Rigidbody rb;
     private Collider col;
@@ -30,6 +31,7 @@ public class MovementController : MonoBehaviour {
     private Boolean InMenu = false;
     private Boolean InPauseMenu = false;
 
+    public static MovementController instance;
 
     // Use this for initialization
     void Start () {
@@ -62,7 +64,7 @@ public class MovementController : MonoBehaviour {
             movement = Vector3.zero;
         
 
-        if (movement != Vector3.zero)
+        if (movement != Vector3.zero && Movlock!=true)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), 0.2f);
 
 
@@ -163,7 +165,7 @@ public class MovementController : MonoBehaviour {
                 {
                     RecipesBook.SetActive(true);
                     RecipeBookUI = true;
-                    InMenu = true;
+                    Movlock = true;
                     FormulaBookPanel.SetActive(true);
                     InventoryPanel.SetActive(true);
                 }
@@ -171,10 +173,11 @@ public class MovementController : MonoBehaviour {
                 {
                     RecipesBook.SetActive(false);
                     RecipeBookUI = false;
-                    InMenu = false;
+                    Movlock = false;
                     FormulaBookPanel.SetActive(false);
                     InventoryPanel.SetActive(false);
                 }
+
             }
         }
 
@@ -197,6 +200,21 @@ public class MovementController : MonoBehaviour {
         }
 
 
+    }
+
+    public void ClosePauseMenu()
+    {
+        InPauseMenu = false;
+    }
+
+    public void LockMovement()
+    {
+        Movlock = true;
+    }
+
+    public void UnlockMovement()
+    {
+        Movlock = false; 
     }
 
 
