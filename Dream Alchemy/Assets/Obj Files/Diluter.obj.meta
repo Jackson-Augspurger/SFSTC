@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: a6c4cb52337f11c4a8e92c8b50af09b4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Catcher_Combiner
+    100002: Combiner_Base_Base
+    100004: Combiner_Base_UpperBase
+    100006: Combiner_LeftStand_pCube3_StandBot
+    100008: Combiner_LeftStand_pCube3_StandTop
+    100010: Combiner_LeftStand_PotLeft
+    100012: Combiner_LeftStand_StandBot_pCube4
+    100014: Combiner_LeftStand_StandBot_pCube6
+    100016: Combiner_LeftStand_StandBot_pCylinder4
+    100018: Combiner_LeftStand_StandTop_pCube4
+    100020: Combiner_LeftStand_StandTop_pCube5
+    100022: Combiner_LeftStand_StandTop_pCylinder4
+    100024: Combiner_RightStand_Dripper
+    100026: Combiner_RightStand_Filter
+    100028: Combiner_RightStand_FunnelStandL
+    100030: Combiner_RightStand_FunnelStandR
+    100032: Combiner_RightStand_pCube3_StandTop
+    100034: Combiner_RightStand_StandTop_pCube4
+    100036: Combiner_RightStand_StandTop_pCube5
+    100038: Combiner_RightStand_StandTop_pCylinder4
+    100040: Combiner_RightStand_Wire
+    100042: Combiner_Stand_LeftStand
+    100044: Combiner_Stand_RightStand
+    100046: //RootNode
+    400000: Catcher_Combiner
+    400002: Combiner_Base_Base
+    400004: Combiner_Base_UpperBase
+    400006: Combiner_LeftStand_pCube3_StandBot
+    400008: Combiner_LeftStand_pCube3_StandTop
+    400010: Combiner_LeftStand_PotLeft
+    400012: Combiner_LeftStand_StandBot_pCube4
+    400014: Combiner_LeftStand_StandBot_pCube6
+    400016: Combiner_LeftStand_StandBot_pCylinder4
+    400018: Combiner_LeftStand_StandTop_pCube4
+    400020: Combiner_LeftStand_StandTop_pCube5
+    400022: Combiner_LeftStand_StandTop_pCylinder4
+    400024: Combiner_RightStand_Dripper
+    400026: Combiner_RightStand_Filter
+    400028: Combiner_RightStand_FunnelStandL
+    400030: Combiner_RightStand_FunnelStandR
+    400032: Combiner_RightStand_pCube3_StandTop
+    400034: Combiner_RightStand_StandTop_pCube4
+    400036: Combiner_RightStand_StandTop_pCube5
+    400038: Combiner_RightStand_StandTop_pCylinder4
+    400040: Combiner_RightStand_Wire
+    400042: Combiner_Stand_LeftStand
+    400044: Combiner_Stand_RightStand
+    400046: //RootNode
+    2100000: blinn6SG
+    2100002: blinn4SG
+    2100004: blinn5SG
+    2100006: phong1SG
+    2100008: blinn1SG
+    2100010: blinn7SG
+    2100012: blinn2SG
+    2100014: blinn3SG
+    2300000: Catcher_Combiner
+    2300002: Combiner_Base_Base
+    2300004: Combiner_Base_UpperBase
+    2300006: Combiner_LeftStand_pCube3_StandBot
+    2300008: Combiner_LeftStand_pCube3_StandTop
+    2300010: Combiner_LeftStand_PotLeft
+    2300012: Combiner_LeftStand_StandBot_pCube4
+    2300014: Combiner_LeftStand_StandBot_pCube6
+    2300016: Combiner_LeftStand_StandBot_pCylinder4
+    2300018: Combiner_LeftStand_StandTop_pCube4
+    2300020: Combiner_LeftStand_StandTop_pCube5
+    2300022: Combiner_LeftStand_StandTop_pCylinder4
+    2300024: Combiner_RightStand_Dripper
+    2300026: Combiner_RightStand_Filter
+    2300028: Combiner_RightStand_FunnelStandL
+    2300030: Combiner_RightStand_FunnelStandR
+    2300032: Combiner_RightStand_pCube3_StandTop
+    2300034: Combiner_RightStand_StandTop_pCube4
+    2300036: Combiner_RightStand_StandTop_pCube5
+    2300038: Combiner_RightStand_StandTop_pCylinder4
+    2300040: Combiner_RightStand_Wire
+    2300042: Combiner_Stand_LeftStand
+    2300044: Combiner_Stand_RightStand
+    3300000: Catcher_Combiner
+    3300002: Combiner_Base_Base
+    3300004: Combiner_Base_UpperBase
+    3300006: Combiner_LeftStand_pCube3_StandBot
+    3300008: Combiner_LeftStand_pCube3_StandTop
+    3300010: Combiner_LeftStand_PotLeft
+    3300012: Combiner_LeftStand_StandBot_pCube4
+    3300014: Combiner_LeftStand_StandBot_pCube6
+    3300016: Combiner_LeftStand_StandBot_pCylinder4
+    3300018: Combiner_LeftStand_StandTop_pCube4
+    3300020: Combiner_LeftStand_StandTop_pCube5
+    3300022: Combiner_LeftStand_StandTop_pCylinder4
+    3300024: Combiner_RightStand_Dripper
+    3300026: Combiner_RightStand_Filter
+    3300028: Combiner_RightStand_FunnelStandL
+    3300030: Combiner_RightStand_FunnelStandR
+    3300032: Combiner_RightStand_pCube3_StandTop
+    3300034: Combiner_RightStand_StandTop_pCube4
+    3300036: Combiner_RightStand_StandTop_pCube5
+    3300038: Combiner_RightStand_StandTop_pCylinder4
+    3300040: Combiner_RightStand_Wire
+    3300042: Combiner_Stand_LeftStand
+    3300044: Combiner_Stand_RightStand
+    4300000: Catcher_Combiner
+    4300002: Combiner_Base_Base
+    4300004: Combiner_Base_UpperBase
+    4300006: Combiner_LeftStand_pCube3_StandBot
+    4300008: Combiner_LeftStand_pCube3_StandTop
+    4300010: Combiner_LeftStand_PotLeft
+    4300012: Combiner_LeftStand_StandBot_pCube4
+    4300014: Combiner_LeftStand_StandBot_pCube6
+    4300016: Combiner_LeftStand_StandBot_pCylinder4
+    4300018: Combiner_LeftStand_StandTop_pCube4
+    4300020: Combiner_LeftStand_StandTop_pCube5
+    4300022: Combiner_LeftStand_StandTop_pCylinder4
+    4300024: Combiner_RightStand_Dripper
+    4300026: Combiner_RightStand_Filter
+    4300028: Combiner_RightStand_FunnelStandL
+    4300030: Combiner_RightStand_FunnelStandR
+    4300032: Combiner_RightStand_pCube3_StandTop
+    4300034: Combiner_RightStand_StandTop_pCube4
+    4300036: Combiner_RightStand_StandTop_pCube5
+    4300038: Combiner_RightStand_StandTop_pCylinder4
+    4300040: Combiner_RightStand_Wire
+    4300042: Combiner_Stand_LeftStand
+    4300044: Combiner_Stand_RightStand
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

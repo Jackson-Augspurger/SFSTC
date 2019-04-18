@@ -64,12 +64,12 @@ public class MovementController : MonoBehaviour {
             movement = Vector3.zero;
         
 
-        if (movement != Vector3.zero && Movlock!=true)
+        if (movement != Vector3.zero)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), 0.2f);
 
 
 
-        if (transform.position.x > -4.45 && transform.position.x < 4.45 && transform.position.z >-4.45 && transform.position.z<4.45)
+        if (transform.position.x > -4.45 && transform.position.x < 4.45 && transform.position.z >-4.45 && transform.position.z<4.45 && Movlock!=true)
         {
             transform.Translate(movement * speed * Time.deltaTime, Space.World);
         }

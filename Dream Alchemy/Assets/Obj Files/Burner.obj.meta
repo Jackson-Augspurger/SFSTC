@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: a2c786127baafe7469f1adce283966f5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bottle_Burner
+    100002: //RootNode
+    100004: Burner_Base_Base
+    100006: Burner_BaseTop_Base
+    100008: Burner_Burner_BurnerBase
+    100010: Burner_Burner_Wire
+    100012: Burner_BurnerTop_Burner
+    100014: Burner_Catcher
+    100016: Burner_Filter_Filtration
+    100018: Burner_Filtration_WireLeft
+    100020: Burner_Filtration_WireRight
+    100022: Burner_LeftStand_pCube3_StandBot
+    100024: Burner_LeftStand_pCube3_StandTop
+    100026: Burner_LeftStand_StandBot_pCube4
+    100028: Burner_LeftStand_StandBot_pCube6
+    100030: Burner_LeftStand_StandBot_pCylinder4
+    100032: Burner_LeftStand_StandTop_pCube4
+    100034: Burner_LeftStand_StandTop_pCube5
+    100036: Burner_LeftStand_StandTop_pCylinder4
+    100038: Burner_RightStand_Grip_pCube8
+    100040: Burner_RightStand_pCube7_Grip
+    100042: Burner_Stand2_RightStand
+    100044: Burner_Stand_LeftStand
+    400000: Bottle_Burner
+    400002: //RootNode
+    400004: Burner_Base_Base
+    400006: Burner_BaseTop_Base
+    400008: Burner_Burner_BurnerBase
+    400010: Burner_Burner_Wire
+    400012: Burner_BurnerTop_Burner
+    400014: Burner_Catcher
+    400016: Burner_Filter_Filtration
+    400018: Burner_Filtration_WireLeft
+    400020: Burner_Filtration_WireRight
+    400022: Burner_LeftStand_pCube3_StandBot
+    400024: Burner_LeftStand_pCube3_StandTop
+    400026: Burner_LeftStand_StandBot_pCube4
+    400028: Burner_LeftStand_StandBot_pCube6
+    400030: Burner_LeftStand_StandBot_pCylinder4
+    400032: Burner_LeftStand_StandTop_pCube4
+    400034: Burner_LeftStand_StandTop_pCube5
+    400036: Burner_LeftStand_StandTop_pCylinder4
+    400038: Burner_RightStand_Grip_pCube8
+    400040: Burner_RightStand_pCube7_Grip
+    400042: Burner_Stand2_RightStand
+    400044: Burner_Stand_LeftStand
+    2100000: blinn5SG
+    2100002: blinn1SG
+    2100004: blinn2SG
+    2100006: blinn6SG
+    2100008: blinn4SG
+    2100010: phong2SG
+    2100012: blinn3SG
+    2100014: blinn7SG
+    2100016: phong1SG
+    2100018: initialShadingGroup
+    2300000: Bottle_Burner
+    2300002: Burner_Base_Base
+    2300004: Burner_BaseTop_Base
+    2300006: Burner_Burner_BurnerBase
+    2300008: Burner_Burner_Wire
+    2300010: Burner_BurnerTop_Burner
+    2300012: Burner_Catcher
+    2300014: Burner_Filter_Filtration
+    2300016: Burner_Filtration_WireLeft
+    2300018: Burner_Filtration_WireRight
+    2300020: Burner_LeftStand_pCube3_StandBot
+    2300022: Burner_LeftStand_pCube3_StandTop
+    2300024: Burner_LeftStand_StandBot_pCube4
+    2300026: Burner_LeftStand_StandBot_pCube6
+    2300028: Burner_LeftStand_StandBot_pCylinder4
+    2300030: Burner_LeftStand_StandTop_pCube4
+    2300032: Burner_LeftStand_StandTop_pCube5
+    2300034: Burner_LeftStand_StandTop_pCylinder4
+    2300036: Burner_RightStand_Grip_pCube8
+    2300038: Burner_RightStand_pCube7_Grip
+    2300040: Burner_Stand2_RightStand
+    2300042: Burner_Stand_LeftStand
+    3300000: Bottle_Burner
+    3300002: Burner_Base_Base
+    3300004: Burner_BaseTop_Base
+    3300006: Burner_Burner_BurnerBase
+    3300008: Burner_Burner_Wire
+    3300010: Burner_BurnerTop_Burner
+    3300012: Burner_Catcher
+    3300014: Burner_Filter_Filtration
+    3300016: Burner_Filtration_WireLeft
+    3300018: Burner_Filtration_WireRight
+    3300020: Burner_LeftStand_pCube3_StandBot
+    3300022: Burner_LeftStand_pCube3_StandTop
+    3300024: Burner_LeftStand_StandBot_pCube4
+    3300026: Burner_LeftStand_StandBot_pCube6
+    3300028: Burner_LeftStand_StandBot_pCylinder4
+    3300030: Burner_LeftStand_StandTop_pCube4
+    3300032: Burner_LeftStand_StandTop_pCube5
+    3300034: Burner_LeftStand_StandTop_pCylinder4
+    3300036: Burner_RightStand_Grip_pCube8
+    3300038: Burner_RightStand_pCube7_Grip
+    3300040: Burner_Stand2_RightStand
+    3300042: Burner_Stand_LeftStand
+    4300000: Bottle_Burner
+    4300002: Burner_Base_Base
+    4300004: Burner_BaseTop_Base
+    4300006: Burner_Burner_BurnerBase
+    4300008: Burner_Burner_Wire
+    4300010: Burner_BurnerTop_Burner
+    4300012: Burner_Catcher
+    4300014: Burner_Filter_Filtration
+    4300016: Burner_Filtration_WireLeft
+    4300018: Burner_Filtration_WireRight
+    4300020: Burner_LeftStand_pCube3_StandBot
+    4300022: Burner_LeftStand_pCube3_StandTop
+    4300024: Burner_LeftStand_StandBot_pCube4
+    4300026: Burner_LeftStand_StandBot_pCube6
+    4300028: Burner_LeftStand_StandBot_pCylinder4
+    4300030: Burner_LeftStand_StandTop_pCube4
+    4300032: Burner_LeftStand_StandTop_pCube5
+    4300034: Burner_LeftStand_StandTop_pCylinder4
+    4300036: Burner_RightStand_Grip_pCube8
+    4300038: Burner_RightStand_pCube7_Grip
+    4300040: Burner_Stand2_RightStand
+    4300042: Burner_Stand_LeftStand
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
