@@ -619,6 +619,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4669254180671142539}
     m_Modifications:
+    - target: {fileID: 1919069183307727933, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
+        type: 3}
+      propertyPath: m_Name
+      value: Wiggen
+      objectReference: {fileID: 0}
     - target: {fileID: 598960157247611001, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -724,12 +729,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1919069183307727933, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
-        type: 3}
-      propertyPath: m_Name
-      value: Wiggen
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2777720582667940771, guid: b2cfb8e7f22d7034d8e437c857c45d3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b2cfb8e7f22d7034d8e437c857c45d3b, type: 3}
 --- !u!224 &2464936968611092736 stripped
 RectTransform:
@@ -854,7 +855,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2567617920406006095, guid: 577a10cb042225841b5c8625e598b6a0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 577a10cb042225841b5c8625e598b6a0, type: 3}
 --- !u!224 &4557114875375159941 stripped
 RectTransform:
@@ -979,7 +981,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8892193928838582303, guid: a8d8335273c270240870d0b3a35107a0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8d8335273c270240870d0b3a35107a0, type: 3}
 --- !u!224 &6412931881935791233 stripped
 RectTransform:

@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 498}
   m_MaxSize: {x: 18004, y: 14048}
   vertical: 0
-  controlID: 63
+  controlID: 53
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 101
+  controlID: 54
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,20 +287,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs/Characters
   m_ViewMode: 1
-  m_StartGridSize: 68
+  m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
-  m_LastFoldersGridSize: 68
+  - Assets/Prefabs/Characters
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Jason\Documents\GitHub\SFSTC\SFSTC\Dream Alchemy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4e340000
-    m_LastClickedID: 13390
-    m_ExpandedIDs: 000000004433000000ca9a3b
+    m_SelectedIDs: e80b0000
+    m_LastClickedID: 3048
+    m_ExpandedIDs: 00000000a4090000e40b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -326,9 +326,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ba2d0000
-    m_LastClickedID: 11706
-    m_ExpandedIDs: 0000000044330000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000a4090000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -381,7 +381,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 68
+    m_GridSize: 16
   m_DirectoriesAreaWidth: 110
 --- !u!114 &12
 MonoBehaviour:
@@ -414,7 +414,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 98e7ffff7ae9ffff60ebffffd4f2ffffd6f2ffffd2350000
+      m_ExpandedIDs: d4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -469,9 +469,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.1482756, y: 5.001788, z: -9.40065}
+    m_Target: {x: -0.12277733, y: 4.4242077, z: -7.701414}
     speed: 2
-    m_Value: {x: -0.1482756, y: 5.001788, z: -9.40065}
+    m_Value: {x: -0.12277733, y: 4.4242077, z: -7.701414}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -499,13 +499,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.16307378, y: -0.00739917, z: 0.0012075572, w: -0.98658544}
+    m_Target: {x: -0.20121779, y: 0.044062577, z: -0.009076455, w: -0.9785129}
     speed: 2
-    m_Value: {x: -0.16307378, y: -0.00739917, z: 0.0012075572, w: -0.98658544}
+    m_Value: {x: -0.2012178, y: 0.04406258, z: -0.009076456, w: -0.97851294}
   m_Size:
-    m_Target: 0.6025518
+    m_Target: 2.397448
     speed: 2
-    m_Value: 0.6025518
+    m_Value: 2.397448
   m_Ortho:
     m_Target: 0
     speed: 2

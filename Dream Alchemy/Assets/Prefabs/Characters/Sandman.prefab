@@ -93,7 +93,6 @@ GameObject:
   - component: {fileID: 514943879}
   - component: {fileID: 514943878}
   - component: {fileID: 514943877}
-  - component: {fileID: 8459762788778928171}
   - component: {fileID: 8619502593199877619}
   m_Layer: 5
   m_Name: Antia
@@ -186,18 +185,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &8459762788778928171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514943873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 849357e8fe581e9488e269c16ee39ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8619502593199877619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +668,6 @@ GameObject:
   - component: {fileID: 2032260470}
   - component: {fileID: 2032260469}
   - component: {fileID: 2032260468}
-  - component: {fileID: 2769062209769946169}
   - component: {fileID: 158939821721321177}
   m_Layer: 5
   m_Name: Wiggen
@@ -774,18 +760,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &2769062209769946169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032260464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 849357e8fe581e9488e269c16ee39ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &158939821721321177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,7 +869,6 @@ GameObject:
   - component: {fileID: 2129935650}
   - component: {fileID: 2129935649}
   - component: {fileID: 2129935648}
-  - component: {fileID: 3855389788377497704}
   - component: {fileID: 5885210289667830089}
   m_Layer: 5
   m_Name: Tentacula
@@ -988,18 +961,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &3855389788377497704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129935644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 849357e8fe581e9488e269c16ee39ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5885210289667830089
 MonoBehaviour:
   m_ObjectHideFlags: 0

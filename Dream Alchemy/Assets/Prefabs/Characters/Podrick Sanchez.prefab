@@ -729,7 +729,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8787737984633210242, guid: f3f51f15ae740d54f8c1574692b811e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f3f51f15ae740d54f8c1574692b811e0, type: 3}
 --- !u!224 &881986532368944943 stripped
 RectTransform:
@@ -854,7 +855,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3361221722650168008, guid: ede5f9c65d4b9104e9038e97b7f2894a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ede5f9c65d4b9104e9038e97b7f2894a, type: 3}
 --- !u!224 &3341489050565356781 stripped
 RectTransform:
@@ -869,6 +871,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537040172943031118}
     m_Modifications:
+    - target: {fileID: 1197509934476996633, guid: c8c2edffb6820584584767ab286eb345,
+        type: 3}
+      propertyPath: m_Name
+      value: Tentacula
+      objectReference: {fileID: 0}
     - target: {fileID: 2435907779547578161, guid: c8c2edffb6820584584767ab286eb345,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -974,12 +981,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1197509934476996633, guid: c8c2edffb6820584584767ab286eb345,
-        type: 3}
-      propertyPath: m_Name
-      value: Tentacula
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 70390236471731480, guid: c8c2edffb6820584584767ab286eb345, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8c2edffb6820584584767ab286eb345, type: 3}
 --- !u!224 &6669221528760558765 stripped
 RectTransform:
