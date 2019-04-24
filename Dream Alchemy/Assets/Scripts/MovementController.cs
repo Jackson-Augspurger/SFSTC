@@ -24,20 +24,22 @@ public class MovementController : MonoBehaviour {
     public GameObject FormulaBookPanel;
 
     private Boolean Movlock = true;
-
     private Rigidbody rb;
     private Collider col;
     private Boolean RecipeBookUI = false;
     private Boolean InMenu = false;
     private Boolean InPauseMenu = false;
+    private Boolean musicplaying=false;
 
     public static MovementController instance;
+
+    GameObject Jukebox;
 
     // Use this for initialization
     void Start () {
 
         rb = GetComponent<Rigidbody>();
-
+        Jukebox = GameObject.Find("Jukebox");
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -76,7 +78,26 @@ public class MovementController : MonoBehaviour {
 
         if (Input.GetKeyDown("e"))
         {
-            if (col != null && InMenu == false)
+
+            if (col.name == "Jukebox" && musicplaying==false)
+            {
+                Debug.Log("Music Starts");
+
+                Jukebox.GetComponent<AudioSource>().enabled = !Jukebox.GetComponent<AudioSource>().enabled;
+
+                musicplaying = true;
+            }
+
+            else if (col.name == "Jukebox" && musicplaying == true)
+            {
+                Debug.Log("Music Ends");
+
+                Jukebox.GetComponent<AudioSource>().enabled = !Jukebox.GetComponent<AudioSource>().enabled;
+
+                musicplaying = false;
+            }
+
+            else if (col != null && InMenu == false)
             {
 
                 if (col.name == "Closet")

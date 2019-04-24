@@ -390,6 +390,7 @@ GameObject:
   - component: {fileID: 6057657969297429737}
   - component: {fileID: 848838271947804696}
   - component: {fileID: 7712351232851143104}
+  - component: {fileID: 6862962757487602885}
   m_Layer: 5
   m_Name: Nigel Berrythorn
   m_TagString: Untagged
@@ -459,6 +460,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &6862962757487602885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3176201998203888506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3ce76bd77aff346b72e174b7cc74c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dream1: 
+  Dream2: 
+  Dream3: 
 --- !u!1 &5750629974142145020
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,11 +635,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4669254180671142539}
     m_Modifications:
-    - target: {fileID: 1919069183307727933, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
-        type: 3}
-      propertyPath: m_Name
-      value: Wiggen
-      objectReference: {fileID: 0}
     - target: {fileID: 598960157247611001, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -728,6 +739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919069183307727933, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
+        type: 3}
+      propertyPath: m_Name
+      value: Wiggen
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2777720582667940771, guid: b2cfb8e7f22d7034d8e437c857c45d3b, type: 3}

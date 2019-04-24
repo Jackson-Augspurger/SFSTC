@@ -16,18 +16,23 @@ public class MainMenuButtonController : MonoBehaviour
 
     MovementController MC;
 
+    GameObject Camera;
+
+
     private void Start()
     {
         StartButton.onClick.AddListener(StartButtonClicked);
         OptionsButton.onClick.AddListener(OptionsButtonClicked);
         QuitButton.onClick.AddListener(QuitButtonClicked);
 
+        Camera = GameObject.Find("Main Camera");
+
         MC = GameObject.FindObjectOfType(typeof(MovementController)) as MovementController;
     }
 
     void StartButtonClicked()
     {
-
+        Camera.GetComponent<AudioSource>().enabled = !Camera.GetComponent<AudioSource>().enabled;
         gameObject.SetActive(false);
         MissionUI.SetActive(true);
         MissionDisplayButton.SetActive(true);

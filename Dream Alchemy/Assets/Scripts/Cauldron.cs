@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cauldron : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Cauldron : MonoBehaviour
     GameObject left;
     GameObject center;
     GameObject right;
+
+    GameObject DreamInfo;
 
     #region Potion GameObjects
 
@@ -71,6 +74,8 @@ public class Cauldron : MonoBehaviour
             && center.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
             && right.transform.GetChild(0).name == MissionSlot1.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
             {
+                MissionUI.SetActive(true);
+                UpdateDreamReport(MissionSlot1.transform.GetChild(0).gameObject);
 
                 Destroy(left.transform.GetChild(0).gameObject);
                 Destroy(right.transform.GetChild(0).gameObject);
@@ -86,6 +91,9 @@ public class Cauldron : MonoBehaviour
             && right.transform.GetChild(0).name == MissionSlot2.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
             {
 
+                MissionUI.SetActive(true);
+                UpdateDreamReport(MissionSlot2.transform.GetChild(0).gameObject);
+
                 Destroy(left.transform.GetChild(0).gameObject);
                 Destroy(right.transform.GetChild(0).gameObject);
                 Destroy(center.transform.GetChild(0).gameObject);
@@ -98,6 +106,8 @@ public class Cauldron : MonoBehaviour
             && center.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(1).transform.GetChild(0).name
             && right.transform.GetChild(0).name == MissionSlot3.transform.GetChild(0).transform.GetChild(2).transform.GetChild(0).name)
             {
+                MissionUI.SetActive(true);
+                UpdateDreamReport(MissionSlot3.transform.GetChild(0).gameObject);
 
                 Destroy(left.transform.GetChild(0).gameObject);
                 Destroy(right.transform.GetChild(0).gameObject);
@@ -136,5 +146,25 @@ public class Cauldron : MonoBehaviour
         }
 #pragma warning restore CS0618 // Type or member is obsolete
 
+
     }
+
+    public void UpdateDreamReport(GameObject person)
+    {
+        DreamInfo = GameObject.Find("DreamInfo");
+
+        int i = Mathf.RoundToInt(Random.value) % 3;
+
+        Debug.Log(i);
+
+        if(i==0)
+            DreamInfo.GetComponent<Text>().text = person.GetComponent<DreamDiscriptionController>().Dream1;
+        else if(i==1)
+            DreamInfo.GetComponent<Text>().text = person.GetComponent<DreamDiscriptionController>().Dream2;
+        else if(i==2)
+            DreamInfo.GetComponent<Text>().text = person.GetComponent<DreamDiscriptionController>().Dream3;
+
+
+    }
+
 }

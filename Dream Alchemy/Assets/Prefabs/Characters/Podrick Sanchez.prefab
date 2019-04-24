@@ -469,6 +469,7 @@ GameObject:
   - component: {fileID: 574315623566934025}
   - component: {fileID: 7830758257946032171}
   - component: {fileID: 4242609328085873577}
+  - component: {fileID: 3367468149758078855}
   m_Layer: 5
   m_Name: Podrick Sanchez
   m_TagString: Untagged
@@ -538,6 +539,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &3367468149758078855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919959280476604149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3ce76bd77aff346b72e174b7cc74c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dream1: 
+  Dream2: 
+  Dream3: 
 --- !u!1 &9042036306418762550
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,11 +635,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5754129864000956598}
     m_Modifications:
-    - target: {fileID: 1917715611187009972, guid: f3f51f15ae740d54f8c1574692b811e0,
-        type: 3}
-      propertyPath: m_Name
-      value: Laught
-      objectReference: {fileID: 0}
     - target: {fileID: 7920595657241382977, guid: f3f51f15ae740d54f8c1574692b811e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -728,6 +739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917715611187009972, guid: f3f51f15ae740d54f8c1574692b811e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Laught
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8787737984633210242, guid: f3f51f15ae740d54f8c1574692b811e0, type: 3}
@@ -871,11 +887,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537040172943031118}
     m_Modifications:
-    - target: {fileID: 1197509934476996633, guid: c8c2edffb6820584584767ab286eb345,
-        type: 3}
-      propertyPath: m_Name
-      value: Tentacula
-      objectReference: {fileID: 0}
     - target: {fileID: 2435907779547578161, guid: c8c2edffb6820584584767ab286eb345,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -980,6 +991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1197509934476996633, guid: c8c2edffb6820584584767ab286eb345,
+        type: 3}
+      propertyPath: m_Name
+      value: Tentacula
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 70390236471731480, guid: c8c2edffb6820584584767ab286eb345, type: 3}

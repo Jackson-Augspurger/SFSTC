@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 7779794429821578687}
   - component: {fileID: 190096864277005518}
   - component: {fileID: 1444692839106276688}
+  - component: {fileID: 2201661067404348777}
   m_Layer: 5
   m_Name: Junior Kyles
   m_TagString: Untagged
@@ -259,6 +260,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &2201661067404348777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3357264527107334149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3ce76bd77aff346b72e174b7cc74c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Dream1: 
+  Dream2: 
+  Dream3: 
 --- !u!1 &3649575928364729763
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,11 +635,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1122251767313395515}
     m_Modifications:
-    - target: {fileID: 8592126836651346789, guid: 26a7372ebb3e7f14ca988cf5b64dfa68,
-        type: 3}
-      propertyPath: m_Name
-      value: Erumpet
-      objectReference: {fileID: 0}
     - target: {fileID: 9008126170803885670, guid: 26a7372ebb3e7f14ca988cf5b64dfa68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -728,6 +739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8592126836651346789, guid: 26a7372ebb3e7f14ca988cf5b64dfa68,
+        type: 3}
+      propertyPath: m_Name
+      value: Erumpet
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8094477577627687584, guid: 26a7372ebb3e7f14ca988cf5b64dfa68, type: 3}
@@ -745,11 +761,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2059622965935222403}
     m_Modifications:
-    - target: {fileID: 2323885264768324095, guid: 2108b406ecaa24c459614ad4055a1349,
-        type: 3}
-      propertyPath: m_Name
-      value: Moonseed
-      objectReference: {fileID: 0}
     - target: {fileID: 4205820138693248476, guid: 2108b406ecaa24c459614ad4055a1349,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -854,6 +865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323885264768324095, guid: 2108b406ecaa24c459614ad4055a1349,
+        type: 3}
+      propertyPath: m_Name
+      value: Moonseed
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7732884149282263972, guid: 2108b406ecaa24c459614ad4055a1349, type: 3}
@@ -871,11 +887,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2008195049388042405}
     m_Modifications:
-    - target: {fileID: 1917715611187009972, guid: f3f51f15ae740d54f8c1574692b811e0,
-        type: 3}
-      propertyPath: m_Name
-      value: Laught
-      objectReference: {fileID: 0}
     - target: {fileID: 7920595657241382977, guid: f3f51f15ae740d54f8c1574692b811e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -980,6 +991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917715611187009972, guid: f3f51f15ae740d54f8c1574692b811e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Laught
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8787737984633210242, guid: f3f51f15ae740d54f8c1574692b811e0, type: 3}
