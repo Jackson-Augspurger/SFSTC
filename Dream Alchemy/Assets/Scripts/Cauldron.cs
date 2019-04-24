@@ -153,9 +153,7 @@ public class Cauldron : MonoBehaviour
     {
         DreamInfo = GameObject.Find("DreamInfo");
 
-        int i = Mathf.RoundToInt(Random.value) % 3;
-
-        Debug.Log(i);
+        int i = Mathf.RoundToInt(Random.value*10) % 3;
 
         if(i==0)
             DreamInfo.GetComponent<Text>().text = person.GetComponent<DreamDiscriptionController>().Dream1;
