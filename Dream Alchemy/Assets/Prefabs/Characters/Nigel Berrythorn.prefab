@@ -472,9 +472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3ce76bd77aff346b72e174b7cc74c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dream1: 
-  Dream2: 
-  Dream3: 
+  Dream1: Nigel dreams that his wife catches him in his affair
+  Dream2: Nigel dreams of himself successfully performing surgery on a young boy
+  Dream3: 'Nigel dreams of himself getting an award for his exellent surgeon skills '
 --- !u!1 &5750629974142145020
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +635,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4669254180671142539}
     m_Modifications:
+    - target: {fileID: 1919069183307727933, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
+        type: 3}
+      propertyPath: m_Name
+      value: Wiggen
+      objectReference: {fileID: 0}
     - target: {fileID: 598960157247611001, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -739,11 +744,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1919069183307727933, guid: b2cfb8e7f22d7034d8e437c857c45d3b,
-        type: 3}
-      propertyPath: m_Name
-      value: Wiggen
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2777720582667940771, guid: b2cfb8e7f22d7034d8e437c857c45d3b, type: 3}

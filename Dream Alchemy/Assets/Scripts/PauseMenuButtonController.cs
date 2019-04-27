@@ -18,17 +18,25 @@ public class PauseMenuButtonController : MonoBehaviour
 
     MovementController MC;
 
+    GameObject Camera;
+    GameObject Jukebox;
+
     private void Start()
     {
         ReturnToMainMenuButton.onClick.AddListener(MainMenuButtonClicked);
         OptionsButton.onClick.AddListener(OptionsButtonClicked);
         QuitButton.onClick.AddListener(QuitButtonClicked);
 
+        Camera = GameObject.Find("Main Camera");
+        Jukebox = GameObject.Find("Jukebox");
+
         MC = GameObject.FindObjectOfType(typeof(MovementController)) as MovementController;
     }
 
     void MainMenuButtonClicked()
     {
+        Camera.GetComponent<AudioSource>().Stop();
+        Jukebox.GetComponent<AudioSource>().Stop();
         gameObject.SetActive(false);
         MainMenu.SetActive(true);
         MissionUI.SetActive(false);

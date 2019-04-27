@@ -451,9 +451,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3ce76bd77aff346b72e174b7cc74c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dream1: 
-  Dream2: 
-  Dream3: 
+  Dream1: Marianne dreams of having a lovely date night with her husband Nigel
+  Dream2: Marianne dreams of her and her husband sitting on the couch and talking
+    about their days
+  Dream3: Marianne dreams of her husband cheating on her and gets angry with him
 --- !u!1 &5361979108040124459
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +762,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5361979108040124458}
     m_Modifications:
+    - target: {fileID: 1530168007584207355, guid: 6f5523b6188562446ae9fe44e9e091cd,
+        type: 3}
+      propertyPath: m_Name
+      value: Tolipan
+      objectReference: {fileID: 0}
     - target: {fileID: 3238984253565438858, guid: 6f5523b6188562446ae9fe44e9e091cd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -865,11 +871,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1530168007584207355, guid: 6f5523b6188562446ae9fe44e9e091cd,
-        type: 3}
-      propertyPath: m_Name
-      value: Tolipan
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7120945637431245310, guid: 6f5523b6188562446ae9fe44e9e091cd, type: 3}
@@ -887,6 +888,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5361979106399821960}
     m_Modifications:
+    - target: {fileID: 3148482739642074266, guid: 3d80754b6d2c9744284c3ce026c45a44,
+        type: 3}
+      propertyPath: m_Name
+      value: Baneberry
+      objectReference: {fileID: 0}
     - target: {fileID: 2483016700924179759, guid: 3d80754b6d2c9744284c3ce026c45a44,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -991,11 +997,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3148482739642074266, guid: 3d80754b6d2c9744284c3ce026c45a44,
-        type: 3}
-      propertyPath: m_Name
-      value: Baneberry
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9127122695926751722, guid: 3d80754b6d2c9744284c3ce026c45a44, type: 3}

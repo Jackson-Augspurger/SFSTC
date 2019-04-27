@@ -6,6 +6,7 @@ public class Diluter : MonoBehaviour
 {
 
     GameObject slot;
+    GameObject DiluterSound;
 
     #region Potion GameObjects
 
@@ -41,6 +42,8 @@ public class Diluter : MonoBehaviour
 
         FU = GameObject.FindObjectOfType(typeof(FormulaUnlock)) as FormulaUnlock;
 
+        DiluterSound= GameObject.Find("Diluter");
+
     }
 
     // Update is called once per frame
@@ -65,7 +68,7 @@ public class Diluter : MonoBehaviour
             newPot = Instantiate(Ponpion, slot.transform);
             newPot.name = Ponpion.name;
             FU.Unlock(Ponpion);
-
+            DiluterSound.GetComponent<AudioSource>().Play();
         }
         //Make Light Blue
         if (slot.transform.GetChild(0).name == "Serecessa")
@@ -74,6 +77,7 @@ public class Diluter : MonoBehaviour
             newPot = Instantiate(Baneberry, slot.transform);
             newPot.name = Baneberry.name;
             FU.Unlock(Baneberry);
+            DiluterSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Light Purple
@@ -83,6 +87,7 @@ public class Diluter : MonoBehaviour
             newPot = Instantiate(Moonseed, slot.transform);
             newPot.name = Moonseed.name;
             FU.Unlock(Moonseed);
+            DiluterSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Light Green
@@ -92,6 +97,7 @@ public class Diluter : MonoBehaviour
             newPot = Instantiate(Tentacula, slot.transform);
             newPot.name = Tentacula.name;
             FU.Unlock(Tentacula);
+            DiluterSound.GetComponent<AudioSource>().Play();
 
         }
 

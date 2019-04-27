@@ -6,15 +6,15 @@ using System;
 public class MovementController : MonoBehaviour {
 
     public float speed;
+    public float footstepIntervals;
+
     public GameObject RecipesBook;
     public GameObject ClosetUI;
     public GameObject CauldronUI;
     public GameObject BurnerUI;
     public GameObject CombinerUI;
     public GameObject DiluterUI;
-
     public GameObject PauseMenu;
-
     public GameObject InventoryPanel;
     public GameObject ClosetPanel;
     public GameObject CauldronPanel;
@@ -34,13 +34,18 @@ public class MovementController : MonoBehaviour {
     public static MovementController instance;
 
     GameObject Jukebox;
+    GameObject FootstepSound;
+
 
     // Use this for initialization
     void Start () {
 
         rb = GetComponent<Rigidbody>();
         Jukebox = GameObject.Find("Jukebox");
-	}
+        FootstepSound = GameObject.Find("Player");
+        InvokeRepeating("MoveSound", 0f, footstepIntervals);
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -64,17 +69,19 @@ public class MovementController : MonoBehaviour {
 
         if (InMenu == true)
             movement = Vector3.zero;
-        
+
 
         if (movement != Vector3.zero)
+        {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), 0.2f);
-
+        }
 
 
         if (transform.position.x > -4.45 && transform.position.x < 4.45 && transform.position.z >-4.45 && transform.position.z<4.45 && Movlock!=true)
         {
             transform.Translate(movement * speed * Time.deltaTime, Space.World);
         }
+
 
         if (Input.GetKeyDown("e"))
         {
@@ -83,7 +90,7 @@ public class MovementController : MonoBehaviour {
             {
                 Debug.Log("Music Starts");
 
-                Jukebox.GetComponent<AudioSource>().enabled = !Jukebox.GetComponent<AudioSource>().enabled;
+                Jukebox.GetComponent<AudioSource>().Play();
 
                 musicplaying = true;
             }
@@ -92,7 +99,7 @@ public class MovementController : MonoBehaviour {
             {
                 Debug.Log("Music Ends");
 
-                Jukebox.GetComponent<AudioSource>().enabled = !Jukebox.GetComponent<AudioSource>().enabled;
+                Jukebox.GetComponent<AudioSource>().Stop();
 
                 musicplaying = false;
             }
@@ -226,6 +233,8 @@ public class MovementController : MonoBehaviour {
     public void ClosePauseMenu()
     {
         InPauseMenu = false;
+        Movlock = false;
+        InMenu = false;
     }
 
     public void LockMovement()
@@ -236,6 +245,12 @@ public class MovementController : MonoBehaviour {
     public void UnlockMovement()
     {
         Movlock = false; 
+    }
+
+    void MoveSound()
+    {
+        if(Input.GetButton("Vertical")||Input.GetButton("Horizontal"))
+            FootstepSound.GetComponent<AudioSource>().Play();
     }
 
 

@@ -13,6 +13,8 @@ public class Cauldron : MonoBehaviour
     GameObject left;
     GameObject center;
     GameObject right;
+    GameObject CauldronSound;
+
 
     GameObject DreamInfo;
 
@@ -53,6 +55,9 @@ public class Cauldron : MonoBehaviour
         right = GameObject.Find("Right");
 
         mc = GameObject.FindObjectOfType(typeof(MissionController)) as MissionController;
+
+        CauldronSound = GameObject.Find("Cauldron");
+
     }
 
     void Update()
@@ -81,6 +86,8 @@ public class Cauldron : MonoBehaviour
                 Destroy(right.transform.GetChild(0).gameObject);
                 Destroy(center.transform.GetChild(0).gameObject);
 
+                CauldronSound.GetComponent<AudioSource>().Play();
+
                 Destroy(MissionSlot1.transform.GetChild(0).gameObject);
             }
         }
@@ -98,6 +105,8 @@ public class Cauldron : MonoBehaviour
                 Destroy(right.transform.GetChild(0).gameObject);
                 Destroy(center.transform.GetChild(0).gameObject);
 
+                CauldronSound.GetComponent<AudioSource>().Play();
+
                 Destroy(MissionSlot2.transform.GetChild(0).gameObject);
             }
         }
@@ -112,6 +121,8 @@ public class Cauldron : MonoBehaviour
                 Destroy(left.transform.GetChild(0).gameObject);
                 Destroy(right.transform.GetChild(0).gameObject);
                 Destroy(center.transform.GetChild(0).gameObject);
+
+                CauldronSound.GetComponent<AudioSource>().Play();
 
                 Destroy(MissionSlot3.transform.GetChild(0).gameObject);
 

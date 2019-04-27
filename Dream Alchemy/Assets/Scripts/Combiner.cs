@@ -8,6 +8,8 @@ public class Combiner : MonoBehaviour
     GameObject left;
     GameObject right;
     GameObject output;
+    GameObject CombinerSound;
+
 
     bool CheckedOnce = true;
 
@@ -46,6 +48,8 @@ public class Combiner : MonoBehaviour
 
         FU = GameObject.FindObjectOfType(typeof(FormulaUnlock)) as FormulaUnlock;
 
+        CombinerSound = GameObject.Find("Combiner");
+
     }
 
     // Update is called once per frame
@@ -70,6 +74,8 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Laught, output.transform);
             newPot.name = Laught.name;
             FU.Unlock(Laught);
+            CombinerSound.GetComponent<AudioSource>().Play();
+
         }
         //Make Orange
         if (left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Strena")
@@ -78,6 +84,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Bundium, output.transform);
             newPot.name = Bundium.name;
             FU.Unlock(Bundium);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Cyan
@@ -87,6 +94,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Tranquesia, output.transform);
             newPot.name = Tranquesia.name;
             FU.Unlock(Tranquesia);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Purple
@@ -96,6 +104,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Wiggen, output.transform);
             newPot.name = Wiggen.name;
             FU.Unlock(Wiggen);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Magenta
@@ -105,6 +114,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Emeragon, output.transform);
             newPot.name = Emeragon.name;
             FU.Unlock(Emeragon);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Red-Orange
@@ -114,6 +124,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Erumpet, output.transform);
             newPot.name = Erumpet.name;
             FU.Unlock(Erumpet);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Mulberry
@@ -123,6 +134,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Everklena, output.transform);
             newPot.name = Everklena.name;
             FU.Unlock(Everklena);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Yellow-Green
@@ -132,6 +144,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Quodot, output.transform);
             newPot.name = Quodot.name;
             FU.Unlock(Quodot);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Turquoise
@@ -141,6 +154,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Redote, output.transform);
             newPot.name = Redote.name;
             FU.Unlock(Redote);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Blue-Green
@@ -150,6 +164,7 @@ public class Combiner : MonoBehaviour
             newPot = Instantiate(Mandium, output.transform);
             newPot.name = Mandium.name;
             FU.Unlock(Mandium);
+            CombinerSound.GetComponent<AudioSource>().Play();
 
         }
 

@@ -32,7 +32,7 @@ public class MainMenuButtonController : MonoBehaviour
 
     void StartButtonClicked()
     {
-        Camera.GetComponent<AudioSource>().enabled = !Camera.GetComponent<AudioSource>().enabled;
+        Camera.GetComponent<AudioSource>().Play();
         gameObject.SetActive(false);
         MissionUI.SetActive(true);
         MissionDisplayButton.SetActive(true);

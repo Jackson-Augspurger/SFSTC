@@ -33,6 +33,7 @@ public class Burner : MonoBehaviour
 
     FormulaUnlock FU;
 
+    GameObject BurnerSound;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,8 @@ public class Burner : MonoBehaviour
         slot = GameObject.Find("BurnerSlot");
 
         FU = GameObject.FindObjectOfType(typeof(FormulaUnlock)) as FormulaUnlock;
+
+        BurnerSound = GameObject.Find("Burner");
 
     }
 
@@ -64,6 +67,7 @@ public class Burner : MonoBehaviour
             newPot = Instantiate(Tolipan, slot.transform);
             newPot.name = Tolipan.name;
             FU.Unlock(Tolipan);
+            BurnerSound.GetComponent<AudioSource>().Play();
 
         }
         //Make Navy
@@ -73,6 +77,7 @@ public class Burner : MonoBehaviour
             newPot = Instantiate(Antia, slot.transform);
             newPot.name = Antia.name;
             FU.Unlock(Antia);
+            BurnerSound.GetComponent<AudioSource>().Play();
 
         }
 

@@ -167,9 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3ce76bd77aff346b72e174b7cc74c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dream1: 
-  Dream2: 
-  Dream3: 
+  Dream1: Cedric Dreams of his son playing soccer with the team and his son scores
+    the final shot
+  Dream2: 'Cedric Dreams of his son getting hurt while playing soccer '
+  Dream3: Cedric Dreams of himself leading the cheers at his sons soccer game tomorrow
 --- !u!1 &2600231056035394698
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +888,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2636753030976611}
     m_Modifications:
+    - target: {fileID: 8341503832892722659, guid: 2936449c53d3b504097c102c161ecbda,
+        type: 3}
+      propertyPath: m_Name
+      value: Strena
+      objectReference: {fileID: 0}
     - target: {fileID: 6487505974134820266, guid: 2936449c53d3b504097c102c161ecbda,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -991,11 +997,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8341503832892722659, guid: 2936449c53d3b504097c102c161ecbda,
-        type: 3}
-      propertyPath: m_Name
-      value: Strena
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1014509432618407029, guid: 2936449c53d3b504097c102c161ecbda, type: 3}

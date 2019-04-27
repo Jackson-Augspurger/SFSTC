@@ -525,9 +525,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3ce76bd77aff346b72e174b7cc74c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dream1: 
-  Dream2: 
-  Dream3: 
+  Dream1: Wendy dreams of getting an award for a building she designed
+  Dream2: Wendy dreams of going on a date with her boyfriend
+  Dream3: Wendy dreams of getting in a fight with another woman
 --- !u!1 &9088055521000855381
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +887,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2546535984177568842}
     m_Modifications:
+    - target: {fileID: 647377591302006024, guid: 9a086e65bfed1d046adcf00714bc950f,
+        type: 3}
+      propertyPath: m_Name
+      value: Everklena
+      objectReference: {fileID: 0}
     - target: {fileID: 8642714006066977629, guid: 9a086e65bfed1d046adcf00714bc950f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -991,11 +996,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 647377591302006024, guid: 9a086e65bfed1d046adcf00714bc950f,
-        type: 3}
-      propertyPath: m_Name
-      value: Everklena
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6204238026705851160, guid: 9a086e65bfed1d046adcf00714bc950f, type: 3}
