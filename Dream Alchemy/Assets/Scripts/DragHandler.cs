@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
     public static GameObject item; //itemBeingDragged
 
@@ -20,7 +20,8 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
         transform.SetParent(transform.root);
 
-
+        if (item.name == "Malessence")
+            Destroy(item);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -41,5 +42,13 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
 
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        item = gameObject;
+
+        if (item.name == "Malessence")
+            Destroy(item);
     }
 }

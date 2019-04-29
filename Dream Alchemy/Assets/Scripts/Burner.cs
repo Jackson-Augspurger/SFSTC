@@ -28,6 +28,8 @@ public class Burner : MonoBehaviour
     public GameObject Tolipan;
     public GameObject Tranquesia;
     public GameObject Wiggen;
+    public GameObject Malessence;
+
 
     #endregion
 
@@ -71,7 +73,7 @@ public class Burner : MonoBehaviour
 
         }
         //Make Navy
-        if (slot.transform.GetChild(0).name == "Serecessa")
+        else if (slot.transform.GetChild(0).name == "Serecessa")
         {
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Antia, slot.transform);
@@ -79,6 +81,15 @@ public class Burner : MonoBehaviour
             FU.Unlock(Antia);
             BurnerSound.GetComponent<AudioSource>().Play();
 
+        }
+        //Make Black
+        else
+        {
+            Destroy(slot.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Malessence, slot.transform);
+            newPot.name = Malessence.name;
+            FU.Unlock(Malessence);
+            BurnerSound.GetComponent<AudioSource>().Play();
         }
 
     }

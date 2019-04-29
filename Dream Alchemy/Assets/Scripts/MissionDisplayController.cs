@@ -21,14 +21,14 @@ public class MissionDisplayController : MonoBehaviour
         {
             MissionMenu.SetActive(true);
             onoff = true;
-            button.transform.GetChild(0).GetComponent<Text>().text = "Hide Missions";
+            button.transform.GetChild(0).GetComponent<Text>().text = "Hide Dream Requests";
 
         }
         else if (onoff == true)
         {
             MissionMenu.SetActive(false);
             onoff = false;
-            button.transform.GetChild(0).GetComponent<Text>().text = "Show Missions";
+            button.transform.GetChild(0).GetComponent<Text>().text = "Show Dream Requests";
         }
     }
 

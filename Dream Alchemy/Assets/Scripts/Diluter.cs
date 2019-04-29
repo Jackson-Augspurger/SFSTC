@@ -29,6 +29,8 @@ public class Diluter : MonoBehaviour
     public GameObject Tolipan;
     public GameObject Tranquesia;
     public GameObject Wiggen;
+    public GameObject Malessence;
+
 
     #endregion
 
@@ -71,7 +73,7 @@ public class Diluter : MonoBehaviour
             DiluterSound.GetComponent<AudioSource>().Play();
         }
         //Make Light Blue
-        if (slot.transform.GetChild(0).name == "Serecessa")
+        else if (slot.transform.GetChild(0).name == "Serecessa")
         {
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Baneberry, slot.transform);
@@ -81,7 +83,7 @@ public class Diluter : MonoBehaviour
 
         }
         //Make Light Purple
-        if (slot.transform.GetChild(0).name == "Wiggen")
+        else if (slot.transform.GetChild(0).name == "Wiggen")
         {
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Moonseed, slot.transform);
@@ -91,7 +93,7 @@ public class Diluter : MonoBehaviour
 
         }
         //Make Light Green
-        if (slot.transform.GetChild(0).name == "Noxion")
+        else if (slot.transform.GetChild(0).name == "Noxion")
         {
             Destroy(slot.transform.GetChild(0).gameObject);
             newPot = Instantiate(Tentacula, slot.transform);
@@ -99,6 +101,16 @@ public class Diluter : MonoBehaviour
             FU.Unlock(Tentacula);
             DiluterSound.GetComponent<AudioSource>().Play();
 
+        }
+
+        //Make Black
+
+        else { 
+        Destroy(slot.transform.GetChild(0).gameObject);
+        newPot = Instantiate(Malessence, slot.transform);
+        newPot.name = Malessence.name;
+        FU.Unlock(Malessence);
+        DiluterSound.GetComponent<AudioSource>().Play();
         }
 
     }

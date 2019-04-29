@@ -34,6 +34,7 @@ public class Combiner : MonoBehaviour
     public GameObject Tolipan;
     public GameObject Tranquesia;
     public GameObject Wiggen;
+    public GameObject Malessence;
 
     #endregion
 
@@ -78,7 +79,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Orange
-        if (left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Strena")
+        else if(left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Strena")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Bundium, output.transform);
@@ -88,7 +89,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Cyan
-        if (left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Mandium")
+        else if(left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Mandium")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Tranquesia, output.transform);
@@ -98,7 +99,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Purple
-        if (left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Serecessa")
+        else if(left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Serecessa")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Wiggen, output.transform);
@@ -108,7 +109,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Magenta
-        if (left.transform.GetChild(0).name == "Pompion" && right.transform.GetChild(0).name == "Wiggen")
+        else if(left.transform.GetChild(0).name == "Pompion" && right.transform.GetChild(0).name == "Wiggen")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Emeragon, output.transform);
@@ -118,7 +119,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Red-Orange
-        if (left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Bundium")
+        else if(left.transform.GetChild(0).name == "Strena" && right.transform.GetChild(0).name == "Bundium")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Erumpet, output.transform);
@@ -128,7 +129,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Mulberry
-        if (left.transform.GetChild(0).name == "Moonseed" && right.transform.GetChild(0).name == "Strena")
+        else if (left.transform.GetChild(0).name == "Moonseed" && right.transform.GetChild(0).name == "Strena")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Everklena, output.transform);
@@ -138,7 +139,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Yellow-Green
-        if (left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Noxion")
+        else if(left.transform.GetChild(0).name == "Laught" && right.transform.GetChild(0).name == "Noxion")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Quodot, output.transform);
@@ -148,7 +149,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Turquoise
-        if (left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Tentacula")
+        else if(left.transform.GetChild(0).name == "Baneberry" && right.transform.GetChild(0).name == "Tentacula")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Redote, output.transform);
@@ -158,7 +159,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Blue-Green
-        if (left.transform.GetChild(0).name == "Serecessa" && right.transform.GetChild(0).name == "Noxion")
+        else if(left.transform.GetChild(0).name == "Serecessa" && right.transform.GetChild(0).name == "Noxion")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Mandium, output.transform);
@@ -169,10 +170,19 @@ public class Combiner : MonoBehaviour
         }
 
         //Checks the Inverse
-        if (CheckedOnce == true)
+        else if (CheckedOnce == true)
         {
             CheckedOnce = false;
             newPot = CheckCombo(right, left);
+        }
+
+        else
+        {
+            Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
+            newPot = Instantiate(Malessence, output.transform);
+            newPot.name = Malessence.name;
+            FU.Unlock(Malessence);
+            CombinerSound.GetComponent<AudioSource>().Play();
         }
 
         return newPot;

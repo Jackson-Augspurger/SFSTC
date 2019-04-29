@@ -26,6 +26,7 @@ public class FormulaUnlock : MonoBehaviour
     public GameObject Tolipan;
     public GameObject Tranquesia;
     public GameObject Wiggen;
+    public GameObject Malessence;
 
     #endregion
 
@@ -67,9 +68,9 @@ public class FormulaUnlock : MonoBehaviour
             Tolipan.SetActive(true);
         else if (Potion.name == "Antia")
             Antia.SetActive(true);
-
-        else
-            Debug.Log("Fuck");
+        else if (Potion.name == "Malessence")
+            Malessence.SetActive(true);
+        
 
     }
 

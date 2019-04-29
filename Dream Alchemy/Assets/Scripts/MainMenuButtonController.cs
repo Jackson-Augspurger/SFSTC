@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+
 
 public class MainMenuButtonController : MonoBehaviour
 {
@@ -11,13 +8,17 @@ public class MainMenuButtonController : MonoBehaviour
     public Button OptionsButton;
     public Button QuitButton;
 
+    public GameObject OptionsMenu;
+
     public GameObject MissionDisplayButton;
     public GameObject MissionUI;
+    public GameObject TutorialUI;
 
     MovementController MC;
 
     GameObject Camera;
 
+    private bool TutorialRead=false;
 
     private void Start()
     {
@@ -36,16 +37,21 @@ public class MainMenuButtonController : MonoBehaviour
         gameObject.SetActive(false);
         MissionUI.SetActive(true);
         MissionDisplayButton.SetActive(true);
+        if (TutorialRead == false) { 
+            TutorialUI.SetActive(true);
+            TutorialRead = true;
+        }
         MC.UnlockMovement();
         MC.ClosePauseMenu();
     }
 
     void OptionsButtonClicked()
     {
-        
+        gameObject.SetActive(false);
+        OptionsMenu.SetActive(true);
     }
     void QuitButtonClicked()
     {
-
+        Application.Quit();
     }
 }

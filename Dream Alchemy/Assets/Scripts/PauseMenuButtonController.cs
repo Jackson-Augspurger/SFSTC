@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+
+
 
 public class PauseMenuButtonController : MonoBehaviour
 {
@@ -12,6 +10,7 @@ public class PauseMenuButtonController : MonoBehaviour
     public Button QuitButton;
 
     public GameObject MainMenu;
+    public GameObject OptionsMenu;
 
     public GameObject MissionDisplayButton;
     public GameObject MissionUI;
@@ -47,10 +46,11 @@ public class PauseMenuButtonController : MonoBehaviour
 
     void OptionsButtonClicked()
     {
-
+        gameObject.SetActive(false);
+        OptionsMenu.SetActive(true);
     }
     void QuitButtonClicked()
     {
-
+        Application.Quit();
     }
 }
