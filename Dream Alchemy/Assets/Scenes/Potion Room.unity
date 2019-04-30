@@ -2616,10 +2616,11 @@ MonoBehaviour:
   m_Text: 'Welcome to Dream Alchemy: Son of Sandman. You''ve been tasked with taking
     over my job of making dreams for the world. As a dream alchemist in training you
     must discover new combinations of the 3 potions I''ve left in the closet in order
-    to supply your clients with dreams. to do so, you will be using 3 different dream
-    creation tools: The Combiner, The Diluter, and The Burner. Filling out your Formula
-    book (The R Key) will aid you in the tasks to come. Now, go forth and good luck!
-    -Sandman'
+    to supply your clients with dreams. To do so, you will be using 3 different dream
+    creation tools: The Combiner, The Diluter, and The Burner. To use the stations
+    walk up to them and press E. Once you''re using them, press the G key to confirm
+    it.  Filling out your Formula book, opened with the R key, will aid you in the
+    tasks to come. Now, go forth and good luck! -Sandman'
 --- !u!222 &177173423
 CanvasRenderer:
   m_ObjectHideFlags: 0
