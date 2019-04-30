@@ -60,7 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\OptionsMenuButtonController.cs" />
     <Compile Include="Assets\Scripts\Burner.cs" />
     <Compile Include="Assets\Scripts\Cauldron.cs" />
     <Compile Include="Assets\Scripts\Combiner.cs" />
@@ -75,6 +74,7 @@
     <Compile Include="Assets\Scripts\MissionDisplayController.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\NameDisplayController.cs" />
+    <Compile Include="Assets\Scripts\OptionsMenuButtonController.cs" />
     <Compile Include="Assets\Scripts\PauseMenuButtonController.cs" />
     <Compile Include="Assets\Scripts\PermanentPotions.cs" />
     <Compile Include="Assets\Scripts\slot.cs" />
