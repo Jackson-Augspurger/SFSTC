@@ -18,7 +18,7 @@ public class Burner : MonoBehaviour
     public GameObject Laught;
     public GameObject Mandium;
     public GameObject Moonseed;
-    public GameObject Noxin;
+    public GameObject Noxion;
     public GameObject Ponpion;
     public GameObject Quodot;
     public GameObject Redote;
@@ -82,6 +82,8 @@ public class Burner : MonoBehaviour
             BurnerSound.GetComponent<AudioSource>().Play();
 
         }
+
+
         //Make Black
         else
         {
