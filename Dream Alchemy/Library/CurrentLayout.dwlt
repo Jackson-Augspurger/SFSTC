@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 524}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 524}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 474}
   m_MaxSize: {x: 18008, y: 14024}
   vertical: 0
-  controlID: 10
+  controlID: 82
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 474}
   m_MaxSize: {x: 10004, y: 14024}
   vertical: 1
-  controlID: 68
+  controlID: 83
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -357,9 +357,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d4fbffffe212000076150000
+      m_SelectedIDs: 943f0000
+      m_LastClickedID: 16276
+      m_ExpandedIDs: a6ebffff5a3f00006e3f0000983f0000a23f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -409,14 +409,14 @@ MonoBehaviour:
     height: 555
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 7831c2f77a7aae94ebde31e5f75fc4a0
-  m_SceneLighting: 1
+  m_SceneLighting: 0
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.9929562, y: 1.7660384, z: -0.091894925}
+    m_Target: {x: 381.10684, y: 224.61801, z: 0.7999034}
     speed: 2
-    m_Value: {x: -2.9929562, y: 1.7660384, z: -0.091894925}
+    m_Value: {x: 381.10684, y: 224.61801, z: 0.7999034}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -424,12 +424,12 @@ MonoBehaviour:
     section: Shading Mode
   m_ValidateTrueMetals: 0
   m_SceneViewState:
-    showFog: 0
+    showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
-    showFlares: 0
-    showImageEffects: 0
-    showParticleSystems: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
   grid:
     xGrid:
       m_Target: 0
@@ -444,13 +444,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.12689252, y: 0.09359471, z: -0.012049677, w: -0.9874174}
+    m_Target: {x: -0.25247198, y: 0.02321813, z: -0.0060771615, w: -0.96730655}
     speed: 2
-    m_Value: {x: -0.12689252, y: 0.09359471, z: -0.012049677, w: -0.9874174}
+    m_Value: {x: -0.25247198, y: 0.02321813, z: -0.0060771615, w: -0.96730655}
   m_Size:
-    m_Target: 5.030427
+    m_Target: 360.5398
     speed: 2
-    m_Value: 5.030427
+    m_Value: 360.5398
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -526,19 +526,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Potions
+    - Assets/Sprites/Characters
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs/Potions
+  - Assets/Sprites/Characters
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Unity Projects\SFSTC\Dream Alchemy
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: a20b0000
-    m_LastClickedID: 2978
+    scrollPos: {x: 0, y: 70}
+    m_SelectedIDs: 483b0000
+    m_LastClickedID: 15176
     m_ExpandedIDs: 00000000ac090000e40b0000ae0d0000320e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -567,7 +567,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac090000e40b0000
+    m_ExpandedIDs: 00000000ac090000e40b0000ae0d0000320e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -598,18 +598,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000e63700008e3700008c3e0000a03e0000963e0000843e0000e629000090330000620b00000000000058260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Podrick Sanchez
+      m_OriginalName: Podrick Sanchez
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 3246
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 9}
     m_CreateAssetUtility:
@@ -619,7 +619,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 54}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_DirectoriesAreaWidth: 110
 --- !u!114 &16
