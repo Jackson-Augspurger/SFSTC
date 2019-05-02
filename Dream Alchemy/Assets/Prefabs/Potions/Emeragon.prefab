@@ -131,3 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
+  POS: {fileID: 0}
+  NEG: {fileID: 0}
+  pos: Love
+  neg: Loathing

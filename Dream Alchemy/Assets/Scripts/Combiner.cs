@@ -109,7 +109,7 @@ public class Combiner : MonoBehaviour
 
         }
         //Make Magenta
-        else if(left.transform.GetChild(0).name == "Pompion" && right.transform.GetChild(0).name == "Wiggen")
+        else if(left.transform.GetChild(0).name == "Ponpion" && right.transform.GetChild(0).name == "Wiggen")
         {
             Destroy(left.transform.GetChild(0).gameObject); Destroy(right.transform.GetChild(0).gameObject);
             newPot = Instantiate(Emeragon, output.transform);
